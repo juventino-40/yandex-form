@@ -1,4 +1,4 @@
-yandex-form
-===========
+Task for Yandex SHRI 3
+======
 
-Yandex. Form
+Школа разработки интерфейсов
