@@ -31,7 +31,153 @@
                 </div>
                 <div id="steps">
                     <form id="formElem" name="formElem" action="" method="post" enctype="multipart/form-data">
-                        
+                        <fieldset class="step">
+                            <p>
+								<label for="birth_year">Год рождения</label>
+								<br />
+								<input id="birth_year" name="birth_year" type="number" />
+                            </p>
+                            <p>
+								<label for="city">Город, в котором вы живёте</label>
+								<br />
+								<input id="city" name="city" type="text" />
+                            </p>
+                            <p>
+								<label for="education">Вуз, факультет, специальность, кафедра</label>
+								<br />
+                                <textarea id="education" name="education" type="text" /></textarea>
+                            </p>
+							<p>
+								<label for="end_year">Год окончания вуза</label>
+								<br />
+                                <input id="end_year" name="end_year" type="number" />
+                            </p>
+							<p>
+								<label for="english">Уровень владения английским языком</label>
+								<br />
+								<label for="english">
+									<input type="checkbox" value="" /><span class="m_r_15">Начальный</span>
+									<input type="checkbox" value="" /><span class="m_r_15">Средний</span>
+									<input type="checkbox" value="" /><span>Свободное владение</span>
+								</label>
+								<br />
+                                <textarea id="english" name="english" type="text" /></textarea>
+                            </p>
+							<p>
+								<label for="my_city">Ссылка на профиль в Моем Круге</label>
+								<br />
+								<input id="my_city" name="my_city" type="text" />
+                            </p>
+							<p>
+								<label for="name">Имя, Фамилия</label>
+								<br />
+								<input id="name" name="name" type="text" />
+                            </p>
+							<p>
+								<label for="phone">Телефон</label>
+								<br />
+								<input id="phone" name="phone" type="number" />
+                            </p>
+							<p>
+								<label for="email"><strong>E-mail</strong></label>
+								<br />
+								<input id="email" name="email" type="email" data-type="validate" />
+                            </p>
+							<p>
+								<label for="more_info">Дополнительные сведения</label>
+								<br />
+                                <textarea id="more_info" name="more_info" type="text" /></textarea>
+                            </p>
+                        </fieldset>
+                        <fieldset class="step">
+                            <p>
+								<label for="expectation">Чего вы ожидаете от участия в Школе?</label>
+								<br />
+                                <textarea id="expectation" name="expectation" type="text" /></textarea>
+                            </p>
+							<p>
+								<label for="where_get">Откуда вы о нас узнали?</label>
+								<br />
+                                <textarea id="where_get" name="where_get" type="text" /></textarea>
+                            </p>
+							<p>
+								<label for="time">Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?</label>
+								<br />
+                                <textarea id="time" name="time" type="text" /></textarea>
+                            </p>
+							<p>
+								<label for="experience">Расскажите о вашем опыте разработки. Нам будет интересно всё — как серьезный интерфейс, так и просто домашняя страничка.</label>
+								<br />
+                                <textarea id="experience" name="experience" type="text" class="middle" /></textarea>
+                            </p>
+							<p>
+								<label for="works">Если вы где-нибудь работали, расскажите, какие у вас были должностные обязанности и был ли опыт работы в команде.</label>
+								<br />
+                                <textarea id="works" name="works" type="text" class="middle" /></textarea>
+                            </p>
+							<p>
+								<label for="soft">Перечислите, какими программными продуктами вы пользуетесь в своей работе — от редактора до специализированных утилит (Intellij Idea, Node.js, Uglify.js, GNU Make). Для каждого инструмента укажите, какие задачи вы с помощью него решаете и почему выбрали именно его.</label>
+								<br />
+                                <textarea id="soft" name="soft" type="text" class="middle" /></textarea>
+                            </p>
+							<p>
+								<label for="command_line">Пользуетесь ли вы командной строкой? Какими командами вы пользуетесь и какие задачи вы решаете с их помощью? С какими программами вы преимущественно или полностью взаимодействуете через интерфейс командной строки?</label>
+								<br />
+                                <textarea id="command_line" name="command_line" type="text" class="middle" /></textarea>
+                            </p>
+                        </fieldset>
+                        <fieldset class="step">
+							<p>
+								<label for="task1" class="small">Напишите на JavaScript функцию, которая выводит список всех чисел, которые равны сумме факториалов своих цифр.<br /><em>Пример такого числа: 4! + 0! + 5! + 8! + 5! = 40585.</em><br />В качестве ответа на вопрос пришлите ссылку на <a href="http://jsfiddle.net/" target="_blank">http://jsfiddle.net/</a> с вашим кодом или на ваш репозиторий на <a href="https://github.com/" target="_blank">https://github.com/</a>.</label>
+								<br />
+                                <textarea id="task1" name="task1" type="text" class="long" /></textarea>
+                            </p>
+                            <p>
+								<label for="task2" class="small">Вы — пилот грузового межгалактического корабля. Ваша работа — перевозка грузов с одной планету на другую. Грузоподъемность вашего корабля ограничена, поэтому за один рейс вы можете перевезти не более N кг полезного груза. Ваш корабль умеет сообщать свое состояние (местоположение и степень загруженности), а также летать в любую точку пространства. Каждая планета может содержать на себе груз, который можно взять. Также на каждой планете груз можно оставить.<br /><em>Задание:</em><br />Даны незавершенные интерфейсы корабля и планеты. Напишите недостающий код. Полное условие задачи доступно на <a href="https://github.com/yandex-shri/introtask-space" target="_blank">https://github.com/yandex-shri/introtask-space</a>. В качестве ответа на вопрос пришлите ссылку на <a href="http://jsfiddle.net/" target="_blank">http://jsfiddle.net/</a> с вашим кодом или на ваш репозиторий на <a href="https://github.com/" target="_blank">https://github.com/</a>.</label>
+								<br />
+                                <textarea id="task2" name="task2" type="text" class="long" /></textarea>
+                            </p>
+							<p>
+								<label for="task3" class="small">Сверстайте форму-анкету с нашими заданиями для кандидатов. Страница должна работать в следующих браузерах: MSIE (8, 9, 10), Google Chrome (26, 27), Firefox (20, 21), Opera (12.15, 12.14), Яндекс.Браузер 1.5. По возможности используйте приёмы безопасной деградации CSS. Страница должна содержать интерактив, реализованный с помощью JS и jQuery. Это может быть:<br />
+								&rarr; проверка полноты и правильности заполнения полей (где это возможно);<br />
+								&rarr; возможность свернуть и развернуть разделы (аккордеон);<br />
+								&rarr; индикатор заполнения анкеты;<br />
+								&rarr; что-нибудь ещё.<br />Подумайте над тем, как эти данные будут отправляться на сервер.<br />Будет плюсом, если вы сверстаете страницу, используя БЭМ.<br /><em>Дополнительные задания:</em><br />1. Выполните задание про форму-анкету, используя один из классических шаблонизаторов: Handlebars, mustache, Dust, Jade и т.п.<br />2. Выполните задание про форму-анкету, используя один из экзотических шаблонизаторов: XSLT, YATE, BEMHTML и т.п.<br />Разработку необходимо вести на <a href="https://github.com/" target="_blank">https://github.com/</a>. В качестве ответа на вопрос пришлите ссылку на проект.</label>
+								<br />
+                                <textarea id="task3" name="task3" type="text" class="long" /></textarea>
+                            </p>
+                        </fieldset>
+						<fieldset class="step">
+							<p>
+								<label for="resume">Резюме до 250 КБ</label>
+								<br />
+								<input id="resume" name="resume" type="file" />
+                            </p>
+							<p>
+								<label for="ad">Откуда вы узнали о нашем предложении?</label>
+								<br />
+								<select id="ad" name="ad">
+									<option value="no">выбрать</option>
+                                    <option value="hr">от HR-менеджера Яндекса</option>
+                                    <option value="subbotnik">Я.Субботник</option>
+                                    <option value="yet">Yet another Conference</option>
+									<option value="other_conf">на другой конференции</option>
+                                    <option value="search">из поиска</option>
+                                    <option value="recomm">по рекомендации</option>
+									<option value="other">другое</option>
+                                </select>
+								<span class="error_radio"><br />Укажите, пожалуйста, откуда вы узнали о нашем предложении.</span>
+								<br /><input name="ad_other" id="ad_other" />
+                            </p>
+							<p>
+								<label for="yes"><input id="yes" name="yes" type="checkbox" data="checkit" checked="" /> Я  даю свое согласие на передачу в ООО «ЯНДЕКС» резюме и/или анкеты, содержащих мои персональные данные, и согласен с тем, что они будут храниться в ООО «ЯНДЕКС» в течение 5 лет и будут обрабатываться исключительно для целей предложения мне вакансий группы компаний «ЯНДЕКС», в соответствии с Федеральным законом «О персональных данных».</label>
+								<span class="error_check"><br />Подтвердите, пожалуйста, своё согласие на передачу анкеты с вашими персональными данными.</span>
+                            </p>
+                            <p class="submit">
+                                <button id="registerButton" type="submit">Отправить</button>
+								<button id="resetButton" type="reset">Очистить</button>
+                            </p>
+                        </fieldset>
                     </form>
                 </div>
             </div>
