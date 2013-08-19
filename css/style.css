@@ -30,11 +30,13 @@ body{
 }
 #steps{
     width:960px;
+	/*height:320px;*/
     overflow:hidden;
 }
 .step{
     float:left;
     width:960px;
+	/*height:320px;*/
 }
 #navigation{
     height:45px;
@@ -74,22 +76,14 @@ body{
     background:#d8d8d8;
     color:#666;
     text-shadow:1px 1px 1px #fff;
+	z-index: 2;
+	position: relative;
 }
-span.checked{
-    background:transparent url(../images/checked.png) no-repeat top left;
-    position:absolute;
-    top:0px;
-    left:1px;
-    width:20px;
-    height:20px;
+.checked_mark{
+    background-color: #bef574 !important;
 }
-span.error{
-    background:transparent url(../images/error.png) no-repeat top left;
-    position:absolute;
-    top:0px;
-    left:1px;
-    width:20px;
-    height:20px;
+.error_mark{
+    background-color: #FFEDEF !important;
 }
 #steps form fieldset{
     border:none;
