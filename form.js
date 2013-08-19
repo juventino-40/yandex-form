@@ -89,12 +89,16 @@ $(function() {
 		var $link = $('#navigation li:nth-child(' + parseInt(step) + ') a');
 		$link.parent().find('.error,.checked').remove();
 		
-		var valclass = 'checked';
+		$link.removeClass("checked_mark");
+		$link.removeClass("error_mark");
+		
+		var valclass = 'checked_mark';
 		if(hasError){
 			error = -1;
-			valclass = 'error';
+			valclass = 'error_mark';
 		}
-		$('<span class="'+valclass+'"></span>').insertAfter($link);
+		
+		$link.addClass(valclass);
 		
 		return error;
 	}
